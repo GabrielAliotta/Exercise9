@@ -14,8 +14,6 @@
 		4A9FB8C914F5702B00550D72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FB8C814F5702B00550D72 /* main.m */; };
 		4A9FB8CC14F5702B00550D72 /* Exercise9AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FB8CB14F5702B00550D72 /* Exercise9AppDelegate.m */; };
 		4A9FB8CF14F5702B00550D72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9FB8CD14F5702B00550D72 /* MainWindow.xib */; };
-		4A9FB8D214F5702B00550D72 /* Exercise9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FB8D114F5702B00550D72 /* Exercise9ViewController.m */; };
-		4A9FB8D514F5702B00550D72 /* Exercise9ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9FB8D314F5702B00550D72 /* Exercise9ViewController.xib */; };
 		4AD4CD6C14F685E100FF7709 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4CD6A14F685E100FF7709 /* RecipeViewController.m */; };
 		4AD4CD6D14F685E100FF7709 /* RecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4CD6B14F685E100FF7709 /* RecipeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -32,9 +30,6 @@
 		4A9FB8CA14F5702B00550D72 /* Exercise9AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise9AppDelegate.h; sourceTree = "<group>"; };
 		4A9FB8CB14F5702B00550D72 /* Exercise9AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise9AppDelegate.m; sourceTree = "<group>"; };
 		4A9FB8CE14F5702B00550D72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4A9FB8D014F5702B00550D72 /* Exercise9ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise9ViewController.h; sourceTree = "<group>"; };
-		4A9FB8D114F5702B00550D72 /* Exercise9ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise9ViewController.m; sourceTree = "<group>"; };
-		4A9FB8D414F5702B00550D72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Exercise9ViewController.xib; sourceTree = "<group>"; };
 		4AD4CD6914F685E100FF7709 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		4AD4CD6A14F685E100FF7709 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 		4AD4CD6B14F685E100FF7709 /* RecipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeViewController.xib; sourceTree = "<group>"; };
@@ -87,9 +82,6 @@
 				4A9FB8CA14F5702B00550D72 /* Exercise9AppDelegate.h */,
 				4A9FB8CB14F5702B00550D72 /* Exercise9AppDelegate.m */,
 				4A9FB8CD14F5702B00550D72 /* MainWindow.xib */,
-				4A9FB8D014F5702B00550D72 /* Exercise9ViewController.h */,
-				4A9FB8D114F5702B00550D72 /* Exercise9ViewController.m */,
-				4A9FB8D314F5702B00550D72 /* Exercise9ViewController.xib */,
 				4A9FB8C214F5702B00550D72 /* Supporting Files */,
 				4AD4CD6914F685E100FF7709 /* RecipeViewController.h */,
 				4AD4CD6A14F685E100FF7709 /* RecipeViewController.m */,
@@ -158,7 +150,6 @@
 			files = (
 				4A9FB8C614F5702B00550D72 /* InfoPlist.strings in Resources */,
 				4A9FB8CF14F5702B00550D72 /* MainWindow.xib in Resources */,
-				4A9FB8D514F5702B00550D72 /* Exercise9ViewController.xib in Resources */,
 				4AD4CD6D14F685E100FF7709 /* RecipeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +163,6 @@
 			files = (
 				4A9FB8C914F5702B00550D72 /* main.m in Sources */,
 				4A9FB8CC14F5702B00550D72 /* Exercise9AppDelegate.m in Sources */,
-				4A9FB8D214F5702B00550D72 /* Exercise9ViewController.m in Sources */,
 				4AD4CD6C14F685E100FF7709 /* RecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,14 +184,6 @@
 				4A9FB8CE14F5702B00550D72 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		4A9FB8D314F5702B00550D72 /* Exercise9ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A9FB8D414F5702B00550D72 /* en */,
-			);
-			name = Exercise9ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,6 +231,7 @@
 				GCC_PREFIX_HEADER = "Exercise9/Exercise9-Prefix.pch";
 				INFOPLIST_FILE = "Exercise9/Exercise9-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -262,6 +245,7 @@
 				GCC_PREFIX_HEADER = "Exercise9/Exercise9-Prefix.pch";
 				INFOPLIST_FILE = "Exercise9/Exercise9-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

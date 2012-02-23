@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class Exercise9ViewController;
+@class RecipeViewController;
 
 @interface Exercise9AppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -17,6 +17,6 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) NSMutableArray *myArray;
 
-@property (nonatomic, retain) IBOutlet Exercise9ViewController *viewController;
+@property (nonatomic, retain) IBOutlet RecipeViewController *viewController;
 
 @end

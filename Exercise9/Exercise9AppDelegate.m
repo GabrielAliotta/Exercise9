@@ -8,7 +8,6 @@
 
 #import "Exercise9AppDelegate.h"
 
-#import "Exercise9ViewController.h"
 #import "RecipeViewController.h"
 
 @implementation Exercise9AppDelegate
@@ -18,7 +17,6 @@
 
 @synthesize viewController=_viewController;
 
-RecipeViewController *tvc;
 UINavigationController *nc;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -31,8 +29,8 @@ UINavigationController *nc;
     [_myArray addObject:@"Recipe3"];
     
     nc = [[UINavigationController alloc] init];
-    tvc = [[RecipeViewController alloc] initWithStyle:UITableViewStylePlain];
-    [nc pushViewController:tvc animated:NO];
+    _viewController = [[RecipeViewController alloc] initWithStyle:UITableViewStylePlain];
+    [nc pushViewController:_viewController animated:NO];
     
     [_window addSubview:nc.view];
     [_window makeKeyAndVisible];
@@ -81,7 +79,6 @@ UINavigationController *nc;
 - (void)dealloc
 {
     [nc release];
-    [tvc release];
     [_myArray release];
     [_window release];
     [_viewController release];

@@ -41,7 +41,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIViewController" id="943309135">
-				<string key="IBUINibName">Exercise9ViewController</string>
+				<string key="IBUINibName">RecipeViewController</string>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="interfaceOrientation">1</int>
@@ -148,7 +148,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
-					<string>Exercise9ViewController</string>
+					<string>RecipeViewController</string>
 					<string>{{234, 376}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{525, 346}, {320, 480}}</string>
@@ -198,7 +198,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>Exercise9ViewController</string>
+							<string>RecipeViewController</string>
 							<string>UIWindow</string>
 						</object>
 					</object>
@@ -213,7 +213,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">viewController</string>
-								<string key="candidateClassName">Exercise9ViewController</string>
+								<string key="candidateClassName">RecipeViewController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">window</string>
@@ -235,11 +235,11 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">Exercise9ViewController</string>
+					<string key="className">RecipeViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Exercise9ViewController.h</string>
+						<string key="minorKey">RecipeViewController.h</string>
 					</object>
 				</object>
 			</object>
