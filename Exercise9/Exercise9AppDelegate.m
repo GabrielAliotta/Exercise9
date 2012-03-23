@@ -17,23 +17,22 @@
 
 @synthesize viewController=_viewController;
 
-UINavigationController *nc;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     
-    _myArray = [[NSMutableArray alloc] init];
+    self.myArray = [[NSMutableArray alloc] init];
     [_myArray addObject:@"Recipe1"];
     [_myArray addObject:@"Recipe2"];
     [_myArray addObject:@"Recipe3"];
     
-    nc = [[UINavigationController alloc] init];
-    _viewController = [[RecipeViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *nc = [[[UINavigationController alloc] init] autorelease];
+    self.viewController = [[RecipeViewController alloc] initWithStyle:UITableViewStylePlain andDelegate: self];
     [nc pushViewController:_viewController animated:NO];
     
     [_window addSubview:nc.view];
     [_window makeKeyAndVisible];
+
     return YES;
 }
 
@@ -78,7 +77,6 @@ UINavigationController *nc;
 
 - (void)dealloc
 {
-    [nc release];
     [_myArray release];
     [_window release];
     [_viewController release];

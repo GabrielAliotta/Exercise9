@@ -9,15 +9,15 @@
 #import "RecipeViewController.h"
 #import "Exercise9AppDelegate.h"
 
-Exercise9AppDelegate *appDelegate;
-
 @implementation RecipeViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+@synthesize appDelegate;
+
+- (id)initWithStyle:(UITableViewStyle)style andDelegate:(Exercise9AppDelegate *)delegate
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        appDelegate = delegate;
     }
     return self;
 }
@@ -41,7 +41,6 @@ Exercise9AppDelegate *appDelegate;
 {
     [super viewDidLoad];
 
-    appDelegate = [[UIApplication sharedApplication] delegate];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self 
                                                                                action:@selector(addRecipe)];
@@ -86,14 +85,12 @@ Exercise9AppDelegate *appDelegate;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [appDelegate.myArray count];
 }
